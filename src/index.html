@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Almosafer</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/img/favicon-32x32.png">
+
+    <!-- Style Sheet -->
+    <!--build:css dist/style.min.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+
+    <!-- Script -->
+    <!--build:js dist/script.min.js -->
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="../node_modules/swiper//dist/js/swiper.min.js" ></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+    <!-- Header Content -->
+    <header class="tj-header">
+        <nav class="navbar navbar-default margin-zero">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tj-navbar" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="dist/img/mosafer-logo.svg" alt="Al Mosafer" title="Al Mosafer" class="img-responsive">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="tj-navbar">
+                    <ul class="nav navbar-nav text-center">
+                        <li class="">
+                            <a class="navbar__link" href="#">
+                                <img src="dist/img//hotel-bed.svg" alt="Hotels" title="Hotels"> Hotels
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navbar__link" href="#">
+                                <img src="dist/img//airplane.svg" alt="Flights" title="Flights"> Flights
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right text-center">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle navbar__link" data-toggle="dropdown" role="button">
+                                SAR
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li class="text-center">
+                                    <a class="navbar__link" href="#">USD</a>
+                                </li>
+
+                                <li class="text-center">
+                                    <a class="navbar__link" href="#">EURO</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="navbar__link" href="#">Retrieve booking</a>
+                        </li>
+
+                        <li>
+                            <a class="navbar__link" href="#">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container-fluid">
+
+        <!-- First Section (Main Background) -->
+        <section class="row section section--main">
+            <div class="container">
+                <header>
+                    <h2>
+                        Get 10% off on flight and hotel bookings
+                        <br/> with your Emirates Islamic Card
+                    </h2>
+
+                    <p>
+                        Save on your booking & spend on something fun!
+                    </p>
+                </header>
+
+                <a class="button button--light-grey" href="">
+                    Book your trip
+                </a>
+
+                <div class="uae-logo">
+                    <img src="dist/img/uae-islamic.png" alt="Emirates Islamic" title="Emirates Islamic" class="img-responsive">
+                </div>
+
+                <a href="" class="button button--circular" id="navDown">
+                    <i class="glyphicon glyphicon-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Second Section (Top Destinations) -->
+        <section class="row section section--top-destinations">
+
+            <header>
+                <div class="container">
+                    <h2>
+                        Visit top destinations around the globe for less
+                    </h2>
+
+                    <div class="header__underline">
+
+                    </div>
+                </div>
+            </header>
+
+            <section>
+                <div class="container">
+                    <!-- Hotels - Flights Tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a data-toggle="tab" href="#hotels-tab">Hotels</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#flights-tab">Flights</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div id="hotels-tab" class="tab-pane fade in active">
+
+                        <!-- Hotels Slider -->
+                        <div class="swiper-container swiper__hotels">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="dist/img/manila.jpg" alt="Dubai" title="Dubai" class="img-responsive">
+
+                                    <div class="slide__overlay">
+                                        <header>
+                                            <h3>
+                                                Manila
+                                            </h3>
+
+                                            <p>
+                                                Philippines
+                                            </p>
+                                        </header>
+
+                                        <div>
+                                            <p>starting from
+                                                <span>AED 1,200</span>
+                                            </p>
+
+                                            <a href="" class="button button--circular">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="dist/img/dubai.jpg" alt="Dubai" title="Dubai" class="img-responsive">
+
+                                    <div class="slide__overlay">
+                                        <header>
+                                            <h3>
+                                                Dubai
+                                            </h3>
+
+                                            <p>
+                                                United Arab Emirates
+                                            </p>
+                                        </header>
+
+                                        <div>
+                                            <p>starting from
+                                                <span>AED 1,200</span>
+                                            </p>
+
+                                            <a href="" class="button button--circular">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="dist/img/abu-dhabi.jpg" alt="Dubai" title="Dubai" class="img-responsive">
+
+                                    <div class="slide__overlay">
+                                        <header>
+                                            <h3>
+                                                Abu Dhabi
+                                            </h3>
+
+                                            <p>
+                                                United Arab Emirates
+                                            </p>
+                                        </header>
+
+                                        <div>
+                                            <p>starting from
+                                                <span>AED 1,200</span>
+                                            </p>
+
+                                            <a href="" class="button button--circular">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="dist/img/amsterdam.jpg" alt="Dubai" title="Dubai" class="img-responsive">
+
+                                    <div class="slide__overlay">
+                                        <header>
+                                            <h3>
+                                                Amsterdam
+                                            </h3>
+
+                                            <p>
+                                                Netherlands
+                                            </p>
+                                        </header>
+
+                                        <div>
+                                            <p>starting from
+                                                <span>AED 1,200</span>
+                                            </p>
+
+                                            <a href="" class="button button--circular">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="dist/img/new-york.jpg" alt="Dubai" title="Dubai" class="img-responsive">
+
+                                    <div class="slide__overlay">
+                                        <header>
+                                            <h3>
+                                                New York
+                                            </h3>
+
+                                            <p>
+                                                USA
+                                            </p>
+                                        </header>
+
+                                        <div>
+                                            <p>starting from
+                                                <span>AED 1,200</span>
+                                            </p>
+
+                                            <a href="" class="button button--circular">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slider Controls -->
+                            <div class="swiper-button-next swiper-button-next__hotels hidden-sm hidden-xs"></div>
+                            <div class="swiper-button-prev swiper-button-prev__hotels hidden-sm hidden-xs"></div>
+                        </div>
+                    </div>
+
+                    <div id="flights-tab" class="tab-pane fade"></div>
+                </div>
+            </section>
+
+        </section>
+
+        <!-- Third Section (Search) -->
+        <section class="row section section--search">
+            <section class="search__module">
+                <div class="container">
+                    <header>
+                        <h2>
+                            Search for a flight or hotel
+                        </h2>
+
+                        <div class="header__underline">
+
+                        </div>
+                    </header>
+
+                    <section class="search__box">
+                        <div class="blurry-background"></div>
+
+                        <div class="search-box__controls">
+                            <div>
+                                <ul class="nav nav-pills">
+                                    <li class="active">
+                                        <a data-toggle="pill" href="#oneWay">One Way</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="pill" href="#return">Return</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="pill" href="#multiCity">Multicity</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <label class="checkbox-inline">
+
+                                    <input type="checkbox" value="">Direct flights only
+
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="">Refundable
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="tab-content">
+                            <div id="oneWay" class="row margin-zero tab-pane fade in active">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="row search-box__flight-details --origin">
+                                        <img src="dist/img/origin.svg" alt="Origin" title="Origin" class="img-responsive">
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Origin" id="flightOriginInput">
+                                        </div>
+
+                                        <label class="checkbox-inline">
+                                            Nearby
+                                            <br/> Airports
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </div>
+
+                                    <div class="row search-box__flight-details --destination">
+                                        <i class="fa fa-map-marker"></i>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Destination" id="flightOriginInput">
+                                        </div>
+
+                                        <label class="checkbox-inline">
+                                            Nearby
+                                            <br/> Airports
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 search-box__flight-date">
+                                    <div class="row margin-zero">
+                                        <div class="col-xs-6 flight-date flight-date__go">
+                                            <input type="date">
+
+                                            <i class="fa fa-suitcase"></i>
+
+                                            <p class="flight-date__month">January</p>
+
+                                            <p class="flight-date__day-num">5</p>
+
+                                            <p class="flight-date__day">Tuesday</p>
+                                        </div>
+
+                                        <div class="col-xs-6 flight-date flight-date__return">
+                                            <input type="date">
+
+                                            <p class="flight-date__icon">
+                                                <i class="fa fa-suitcase"></i>
+                                            </p>
+
+                                            <p class="flight-date__add-return">add return</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                    <div class="row search-box__flight-details --flight-type">
+                                        <div class="form-group">
+                                            <select class="form-control" id="flightType">
+                                                <option selected>Economy</option>
+                                                <option>Business</option>
+                                                <option>First Class</option>
+                                            </select>
+                                        </div>
+
+                                        <i class="fa fa-chevron-down"></i>
+                                    </div>
+
+                                    <div class="row search-box__flight-details --flight-pass">
+                                        <div class="dropdown text-left">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">1 Passenger
+                                                <i class="fa fa-chevron-down pull-right"></i>
+                                            </button>
+
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <span>
+                                                        Passengers
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 padding-right-zero">
+                                    <button class="search-box__button">
+                                        <i class="fa fa-search"></i>
+
+                                        Search flights
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="search__layer-gradient-1"></div>
+            </section>
+
+
+
+            <div class="search__layer-gradient-2"></div>
+
+            <div class="fun-ads">
+                <header>
+                    <div class="container">
+                        <h2>
+                            Imagine all the fun things you could do
+                            <br/> with the money you saved
+                        </h2>
+
+                        <div class="header__underline"></div>
+                    </div>
+                </header>
+
+                <section class="fun-ads__container">
+                    <div class="fun-ad">
+                        <img src="dist/img/fun-things-1.png" alt="Enjoy Local Foods" title="Enjoy Local Foods" class="img-responsive">
+
+                        <div class="fun-ad__num">
+                            <span>
+                                01
+                            </span>
+                        </div>
+
+                        <div class="fun-ad__text">
+                            <span>
+                                Enjoy some
+                                <br/> local foods
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="fun-ad">
+                        <img src="dist/img/fun-things-2.png" alt="Check Top Attractions" title="Check Top Attractions" class="img-responsive">
+
+                        <div class="fun-ad__num">
+                            <span>
+                                02
+                            </span>
+                        </div>
+
+                        <div class="fun-ad__text">
+                            <span>
+                                Check out the
+                                <br/> top attractions
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="fun-ad">
+                        <img src="dist/img/fun-things-3.png" alt="Get souvenirs" title="Get souvenirs" class="img-responsive">
+
+                        <div class="fun-ad__num">
+                            <span>
+                                03
+                            </span>
+                        </div>
+
+                        <div class="fun-ad__text">
+                            <span>
+                                Get some souvenirs
+                                <br/> to take home
+                            </span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Fourth Section (How does it work) -->
+        <section class="row section section--how-it-works">
+            <div class="container">
+                <header>
+                    <h2>
+                        How does it work?
+                    </h2>
+
+                    <div class="header__underline"></div>
+                </header>
+
+                <section class="row work__steps">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <header>
+                            <h3>
+                                Step 1
+                            </h3>
+
+                            <div class="header__underline"></div>
+                        </header>
+
+                        <p>Book your flight or hotel through the Almosafer app or website.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <header>
+                            <h3>
+                                Step 2
+                            </h3>
+
+                            <div class="header__underline"></div>
+                        </header>
+
+                        <p>Use your Emirates Islamic card.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <header>
+                            <h3>
+                                Step 3
+                            </h3>
+
+                            <div class="header__underline"></div>
+                        </header>
+
+                        <p>The discount will be applied automatically.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <header>
+                            <h3>
+                                Step 4
+                            </h3>
+
+                            <div class="header__underline"></div>
+                        </header>
+
+                        <p>Congratulations! You just saved on your trip!</p>
+                    </div>
+                </section>
+            </div>
+
+        </section>
+
+        <!-- Fifth Section (Credit Cards) -->
+        <section class="row section section--credit-cards">
+            <div class="container">
+                <header>
+                    <h2>Emirates Islamic Bank Featured Credit Cards</h2>
+                </header>
+
+                <div class="header__underline"></div>
+
+                <section class="row credit-cards__img">
+                    <img src="dist/img/credit-cards.png" srcset="dist/img/credit-cards@2x.png 2x,
+                            dist/img/credit-cards@3x.png 3x" alt="Credit Cards" title="Credit Cards" class="img-responsive">
+                </section>
+
+                <section class="row">
+                    <div class="col-xs-3 credit-cards__text">
+                        <span>Skywards Infinite Credit Card</span>
+                    </div>
+
+                    <div class="col-xs-3 credit-cards__text">
+                        <span>Cashback Credit Card</span>
+                    </div>
+
+                    <div class="col-xs-3 credit-cards__text">
+                        <span>Emarati Credit Card</span>
+                    </div>
+
+                    <div class="col-xs-3 credit-cards__text">
+                        <span>Flex Elite Credit Card</span>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- sixth Section (Terms and Conditions) -->
+        <section class="row section section--terms">
+            <div class="container">
+                <header>
+                    <h2>
+                        Terms and Conditions
+                    </h2>
+
+                    <div class="header__underline"></div>
+                </header>
+
+                <section class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <ol class="terms__rules">
+                            <li>
+                                <p>
+                                    10% off all hotel & flight bookings with your Emirates Islamic Bank card
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    The discount is applied on the total booking amount, excluding the service fee/taxes.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    The discount will automatically be deducted upon checkout when the applicable Emirates Islamic Bank card info is entered.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Offer applicable only for Emirates Islamic Bank cardholders.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Offer applies to all flight bookings (domestic and international) boarding from UAE or elsewhere.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Valid for adult, children and infant ticket bookings
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Only valid on ae.almosafer.com and the Almosafer mobile app.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <ol start="8" class="terms__rules">
+                            <li>
+                                <p>
+                                    Offer can be redeemed only once per user – either a flight booking or a hotel booking.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Sale period: Book by 25 October 2017.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Travel Period: Open travel dates with no blackout dates.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    All flights fares are subject to availability at the time of booking.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Check “Fare Conditions” during the booking to view all applicable fare rules, penalties, flight restrictions and date change
+                                    fees. Other flight terms and conditions apply.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    This offer can't be combined with any other offer.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Seventh Section (Download Mobile App) -->
+        <section class="row section section--download-app">
+            <div class="container">
+                <div class="row">
+                    <div class="app__photo col-lg-3 col-md-3 col-sm-4 hidden-xs">
+                        <img src="dist/img/phone-app.png" alt="Download Almosafer" title="Download Almosafer" class="img-responsive">
+                    </div>
+
+                    <div class="app__download col-lg-6 col-md-6 col-sm-8 col-xs-12 pull-right text-right" dir="rtl">
+                        <header>
+                            <h2>
+                                حمل تطبيق المسافر
+                            </h2>
+                        </header>
+
+                        <div class="row text-right">
+                            <div class="col-xs-12">
+                                <p>
+                                    خذ معك كل ما تحتاجه للسفر أينما ذهبت وبأي وقت: دفع آمن, عروض طيران و فنادق, حجز ولا أسهل!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 download__link pull-right">
+                                <a href="">
+                                    <img src="dist/img/app-store.png" alt="App Store" title="App Store" class="img-responsive">
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 download__link pull-right">
+                                <a href="">
+                                    <img src="dist/img/play-store.png" alt="Play Store" title="Play Store" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer class="container-fluid" dir="rtl">
+        <div class="footer__pattern">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 pull-right">
+                    <img src="dist/img/logo-w.png" alt="Almosafer" title="Almosafer" class="img-responsive">
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 footer__links pull-right">
+                    <header>
+                        <h2>شركتنا</h2>
+                    </header>
+
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="">من نحن</a>
+                            </li>
+
+                            <li>
+                                <a href="">وظائف شاغرة</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 footer__links pull-right">
+                    <header>
+                        <h2>السياسات</h2>
+                    </header>
+
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="">الشروط والأحكام</a>
+                            </li>
+
+                            <li>
+                                <a href="">سياسة الخصوصية</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 footer__links pull-right">
+                    <header>
+                        <h2>الدعم</h2>
+                    </header>
+
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="">تواصل معنا</a>
+                            </li>
+
+                            <li>
+                                <a href="">الأسئلة المكررة</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 footer__links pull-right">
+                    <header>
+                        <h2>التواصل الإجتماعي</h2>
+                    </header>
+
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-facebook-f"></i>
+                                    فيسبوك
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-linkedin"></i>
+                                    لينكد إن
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-instagram"></i>
+                                    إنستقرام
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-twitter"></i>
+                                    تويتر
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center footer__copy-rights">
+                <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">
+                    <div class="row margin-zero">
+                        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+                            <img src="dist/img/visa-card.png" alt="Visa Card" title="Visa Card" class="img-responsive">
+                        </div>
+
+                    </div>
+
+                    <div class="row margin-zero text-center">
+                        <p>جميع الحقوق محفوظة © 2017 المسافر</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
